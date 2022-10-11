@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Framxx-OS"
+           fetch="https://github.com/Franxx-OS"
+           revision="refs/heads/13" />
+
+  <!-- build repos -->
+  <project path="build/make" name="build" groups="pdk" remote="13" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="13" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="art" remote="13" />
+  <project path="bionic" name="bionic" groups="pdk" remote="13" />
+  <project path="manifest" name="manifest" remote="13" />
+
+  <!-- bootable repos -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="13" />
+
+  <!-- device repos -->
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="13" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="13" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="13" />
+
+  <!-- hardware repos -->
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="13" />
+  <project path="hardware/lineage/livedisplay" name="LineageOS/android_hardware_lineage_livedisplay" remote="github" revision="lineage-19.1" />
+
+  <!-- framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="13" />
+  <project path="frameworks/base" name="frameworks_base" remote="13" />
+  <project path="frameworks/native" name="frameworks_native" remote="13" />
+
+  <!-- packages repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="13" />
+  <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="13" />
+
+  <!-- system repos -->
+  <project path="system/core" name="system_core" remote="13" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="13" />
+  <project path="system/vold" name="system_vold" remote="13" />
+  <project path="system/security" name="system_security" remote="13" />
+
+  <!-- vendor repos -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="13" />
+  <project path="vendor/support" name="vendor_support" remote="13" />
+
+</manifest>
