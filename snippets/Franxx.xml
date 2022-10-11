@@ -32,6 +32,7 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="13" />
 
   <!-- hardware repos -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote"13" />
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="13" />
   <project path="hardware/lineage/livedisplay" name="LineageOS/android_hardware_lineage_livedisplay" remote="github" revision="lineage-19.1" />
 
