@@ -44,6 +44,7 @@
   <!-- packages repos -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="13" />
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="13" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="13" />
 
   <!-- system repos -->
   <project path="system/core" name="system_core" remote="13" />
